@@ -3,6 +3,11 @@
 	<head>
 		<title>Portfolio</title>
 		<meta charset="utf-8" />
+
+
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script src="bootstrap/js/bootstrap.min"></script>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -21,7 +26,7 @@
 	    	.lowerBar {
 	    		background: #353b48;
 	    		display: block;
-	    		height: 2px;
+	    		height: 4px;
 	    		border: 1px solid rgba(0,0,0,0.3);
 	    		border-radius: 3px;
 	    		overflow: hidden;
@@ -29,7 +34,7 @@
 	    	}
 
 	    	.bar {
-	    		height: 2px;
+	    		height: 4px;
 	    		float: left;
 	    		background: #2187e7;
 	    		width: 90%;
@@ -38,26 +43,25 @@
 
 	    </style>
 	</head>
-	<body style="background-color: blue">
-        <div id="shtabs" style="width: 60%; margin: auto; background-color: gray;min-width: 550px; max-width: 1200px;">
+	<body style="background-color: blue;" class="container">
+        <div id="shtabs" style="margin: auto; background-color: gray; min-width: 550px;" class="row col-md-12">
             <ul>
                 <li><a href="#intro">Over mij</a></li>
-                <li><a href="#dotnet">.Net</a></li>
-                <li><a href="#python">Python</a></li>
-                <li><a href="#java">Java</a></li>
+                <li><a href="#web">web development</a></li>
+                <li><a href="#algorithms">data/algoritmes/ML</a></li>
+                <li><a href="#mobile">Mobile</a></li>
+                <li><a href="#desktop">Desktop</a></li>
             </ul>
-            <div id="intro" style="display: inline-block; height: auto;">
+            <div id="intro" style="display: inline-block; height: auto;" class="col-md-12">
             	<div style="display: inline-block; width: 500px; float: left;">
        		     	<img src="images/p2.png" alt="" style="border-radius: 50%; border-style: solid; border-width: 2px; display: inline-block;" />
             		<p>
             			<ul>
-						<li><a href="https://nl.linkedin.com/in/alialfatly" target="_blank">LinkedIn</a></li>
-						<li><a href="https://github.com/AliAlFatly" target="_blank">github</a></li>
+						<li><a href="https://nl.linkedin.com/in/alialfatly" target="_blank" style="color: blue">LinkedIn</a></li>
+						<li><a href="https://github.com/AliAlFatly" target="_blank" style="color: blue">github</a></li>
 						<li>alialfatly@outlook.com</li>
 						</ul>
 					</p>
-
-
 					<div class="skills">
 						<li>
 							<h4>.NET</h4>
@@ -68,15 +72,20 @@
 							<span class="lowerBar"><span class="bar" style="width: 65%"></span></span>
 						</li>
 						<li>
-							<h4>Java</h4>
-							<span class="lowerBar"><span class="bar" style="width: 50%"></span></span>
+							<h4>SQL/MSSQL/MYSQL</h4>
+							<span class="lowerBar"><span class="bar" style="width: 75%"></span></span>
 						</li>
 						<li>
 							<h4>Html/css</h4>
-							<span class="lowerBar"><span class="bar" style="width: 65%"></span></span>
+							<span class="lowerBar"><span class="bar" style="width: 70%"></span></span>
 						</li>
 						<li>
-							<h4>Javascript</h4>
+							<h4>Bootstrap</h4>
+							<span class="lowerBar"><span class="bar" style="width: 70%"></span></span>
+						</li>
+
+						<li>
+							<h4>Javascript/Typescript</h4>
 							<span class="lowerBar"><span class="bar" style="width: 75%"></span></span>
 						</li>
 						<li>
@@ -84,10 +93,17 @@
 							<span class="lowerBar"><span class="bar" style="width: 65%"></span></span>
 						</li>
 						<li>
-							<h4>Node.js</h4>
-							<span class="lowerBar"><span class="bar" style="width: 35%"></span></span>
+							<h4>Java</h4>
+							<span class="lowerBar"><span class="bar" style="width: 50%"></span></span>
 						</li>
-
+						<li>
+							<h4>Node.js/express.js</h4>
+							<span class="lowerBar"><span class="bar" style="width: 50%"></span></span>
+						</li>
+						<li>
+							<h4>Angular 8 (TS)</h4>
+							<span class="lowerBar"><span class="bar" style="width: 50%"></span></span>
+						</li>
 
 					</div>
 					<div>
@@ -109,18 +125,10 @@
 						Ik ben een derdejaars informatica student aan het hogeschool Rotterdam (HRO). Voor mijn HBO opleiding heb ik een MBO Bol 4 civiel techniek opleiding afgerond. Ik wil verder in informatica door de vrijheid van keuze en werk.
 					</p>
 					<p>
-						Ik ben ambiteus, leergierig en een doorzetter. Heel veel in de wereld van IT spreekt mij verder aan:
-						<ul>
-							<li>Content/onderwijscontent/data management</li>
-							<li>3D content (AR/games/civil engineering services(GIS/3D object services)</li>
-							<li>Blockchain & cryptocurrency</li>
-							<li>Data Science & data structures</li>
-							<li>robotics & automation</li>
-							<li>Machine learning & AI</li>
-							<li>Security & networks</li>
-						
-						</ul>
-						<p>Ik vind verder meeste zaken in development (informatica) leuk, van content management tot IoT</p>
+						Ik ben ambiteus, leergierig en een doorzetter. Heel veel in de wereld van IT spreekt mij verder aan.
+					</p>
+					<p>
+						Ik geloof dat door genoeg door te zetten alles te ontwikkelen is.
 					</p>
 					<br>
 					<p>Ik ben momenteel opzoek naar een derdejaars stage.</p>
@@ -131,31 +139,38 @@
 					</p>
 					<h2>Vaardigheden</h2>
 					<p>
-						Ik heb meerdere project in .Net uitgevoerd de meeste projecten zijn dan verbonden aan een SQL database. Denk daarbij aan asp.net websites, XAMARIN cross platform mobiele apps, windowsform desktop applicaties en advanced data structure implementatie. Ik schat dat C# mijn sterkste taal is als het om development gaat.
+						Ik heb meerdere project in .Net uitgevoerd de meeste projecten zijn dan verbonden aan een SQL database. Denk daarbij aan asp.net websites, XAMARIN cross platform mobiele apps, windowsform desktop applicaties en advanced data structure implementatie.
 					</p>
 					<p>
-						Ik heb verder met Python data-manipulatie operaties uitgevoerd. Dit is dan uitgevoerd voor machine learning. Ik heb zo clustering algoritmes zoals K-means en dnn, classificatie algoritmes zoals linear regression geimplementeerd. Ik heb heb ook wat kennis van deeplearning.
+						Ik heb verder met Python data-manipulatie operaties uitgevoerd. Dit is dan uitgevoerd voor machine learning. Ik heb zo clustering algoritmes zoals K-means en dnn, classificatie algoritmes zoals linear regression geimplementeerd. Ik heb ook wat kennis van deeplearning.
 					</p>
 					<p>
-						Ik heb bij alle web projecten html/css toegepast. Ik vind wel dat mijn vermogen beter is in de back-end dan in de front-end.
+						Ik heb bij alle web projecten html/css toegepast. Ik heb ook bij de meeste project bootstrap toegepast.
 					</p>
 					<p>
-						Ik heb bij de meeste projecten javascript en Jquery toegepast. Javascript lijkt heel erg op C#. Ik heb bij een minor fullstack webdevelopment dat ik momenteel volg nog een opdracht gekregen om een node.js server op te stellen aan de back-end. Ik heb daardoor wat kennis van node.js.
+						Ik heb bij de meeste projecten javascript en Jquery toegepast. Ik volg momenteel een minor fullstack web development waarbij ik onder ander node.js leer. Ik heb daarbij een login applicatie gebouwt met express.js aan de back-end.
 					</p>
 					<p>
-						Ik volg momenteel een fullstack webdevelopment minor waarbij ik onderander java, angular, node.js leer. Ik verster mijn OO-programming vermogen ook.
+						Ik leer verder door het volgen van de minor de volgende zaken:
+						<ul>
+							<li>spring boot/spring</li>
+							<li>Angular</li>							
+							<li>unit-tests in jasmine (js) /G-unit (java)</li>
+							<li>CI</li>
+						</ul>
 					</p>
             </div>
-           	<div id="dotnet" style="height: auto;">
+           	<div id="web" style="height: auto;  min-width: 550px;">
 	           	 <ul style="background-color: blue">
-	                <li><a href="#asp">asp.net</a></li>
-	                <li><a href="#ADS">Data structures and algorithms</a></li>
-	                <li><a href="#Xamarin">Xamarin</a></li>
+	                <li><a href="#toymania">Toymania (asp.net)</a></li>
+	                <li><a href="#markedNote">Markednote (asp.net core)</a></li>
+	                <li><a href="#castlerole">Castlerole (spring boot/angular)</a></li>
+	                <li><a href="#node">login in node.js</a></li>
 	            </ul>
-           		<div id="asp"> 
-					<h2>Toymania - asp.net MVC C# razor webpage SQL</h2>
+           		<div id="toymania"> 
+					<h2>Toymania - asp.net framework (4.6) MVC razor</h2>
 	           		<div style="height: auto;">
-	           			<div style="width: 500px; float: left;">
+	           			<div style="width: 450px; float: left;">
 	                    <p>
 		           			Voor mijn 4e project op school kreeg ik een opdracht om in een groep een webshop te bouwen. Mijn groep en ik kozen daarbij voor asp.net webshop met entityframework model verbinding en een SQL database.
 		           		</p>
@@ -192,7 +207,7 @@
 		           			<source src="images/Toymania.mp4" type="video/mp4">
 		           		</video>
 		           		<p>Zie bovenstaande video voor visuale uitleg.</p>
-		           		<p><a href="https://github.com/AliAlFatly/Toymaniaproject" target="_blank">Toymania github.com</a></p>
+		           		<p><a href="https://github.com/AliAlFatly/Toymaniaproject" target="_blank" style="color: blue">Toymania github.com</a></p>
 		           		<br><br>
 						En dan is er een eigenaars account, en die kan:
 	           			<ul>
@@ -208,7 +223,59 @@
 		           			
 	           		</div>
            		</div>
-           		<div id="ADS" style="height: auto;">
+           		<div id="markedNote">
+           			<h2>Markednote - asp.net core (2.2) Rest api + MVC razor<br /></h2>
+           			<div style="width: 500px; float: left;">
+           				<p>
+           					Markednote is een persoonlijk project. Het is echter nog niet afgerond. Het doel van Markednote is het bouwen van een applicatie dat code snippets opslaat voor de gebruiker.
+           				</p>
+						<p>
+							De gebruiker kan dan op een latere moment via een search optie naar de juiste snippet zoeken (dit functie is nog niet geimplementeerd).
+						</p>
+						<p>
+							Ik wil verder op een latere moment een share optie toevoegen waarbij collega's snippets/notes met elkaar kunnen delen.
+						</p>
+						<p>
+							Zie de implementatie van de datastructuren op <a href="https://github.com/AliAlFatly/Markednote" target="_blank" style="color: blue">github</a>.
+						</p>
+           			</div>
+		           		<video width="500" height="auto" controls>
+		           			<source src="images/MarkedNote.mp4" type="video/mp4">
+		           		</video>
+           		</div>
+           		<div id="castlerole" style="height: auto;">
+           			<h2>Castlerole - Spring boot/angular 8<br /></h2>
+           			<div><!--  style="width: 500px; float: left;"> -->
+           				<p>
+           					Ik volg op het moment een minor waarbij ik in een groep een fullstack web applicatie ontwikkel met behulp van spring boot en angular 8. 
+							<p>Zie de huidige versie van de implementatie op <a href="https://github.com/AliAlFatly/castlerolet" target="_blank" style="color: blue">github</a>.</p>
+						</p>
+           			</div>
+
+           		</div>
+           		<div id="node" style="height: auto;">
+           			<h2>Node.js express.js in memory built database Jquery<br /></h2>
+           			<div style="width: 500px; float: left;">
+           				<p>
+           					Om node.js te leren ging ik een login functionaliteit implementeren waarbij ik CRUD operatie's uitvoer met behulp express.js
+						</p>
+						<p>
+							Zie de implementatie van de datastructuren op <a href="https://github.com/AliAlFatly/LoginNode.js" target="_blank" style="color: blue">github</a>.
+						</p>
+           			</div>
+		           		<video width="500" height="auto" controls>
+		           			<source src="images/NodeLogin.mp4" type="video/mp4">
+		           		</video>
+           		</div>           		
+
+            </div>
+            <div id="algorithms">
+            	<ul>
+            		<li><a href="#datastructures">Advanced datastructures C#</a></li>
+            		<li><a href="#ML">Basic machinelearning python</a></li>
+	                <li><a href="#DL">Deeplearning (Dept project)</a></li>
+	            </ul>
+	            <div id="datastructures" style="height: auto;">
            			<h2>Geavanceerde data structuren in C#<br /></h2>
            			<div style="width: 500px; float: left;">
            				<p>
@@ -227,41 +294,35 @@
            						<li>Reduce</li>
            						<li>Filter</li>
            					</ul>
-							<p>Zie de implementatie van de datastructuren op <a href="https://github.com/AliAlFatly/AdvancedDatastructuresDotNet" target="_blank">github</a>.</p>
+							<p>Zie de implementatie van de datastructuren op <a href="https://github.com/AliAlFatly/AdvancedDatastructuresDotNet" target="_blank" style="color: blue">github</a>.</p>
 						</p>
            			</div>
            			<div style="width: 500px; float: right;">
            				<img src="images/bt.png" height="600px" width="480px" />
            			</div>
            		</div>
-           		<div id="Xamarin">
-           			<h2>Cross platform sport app in Xamarin<br /></h2>
-           			<div style="width: 500px; float: left;">
-           				<p>
-           					Ik ging bij dit project in een groep een Xamarin app bouwen. Dit app neemt de gebruikers:
-           					<ul>
-           						<li>plan (aankomen of afkomen)</li>
-           						<li>gegevens zoals gewicht en lengte</li>
-           					</ul>
-           					En genereert daaruit een plan voor de gebruiker.
-
-           					Dit was mijn eerste project in .net.
-							<p>Zie <a href="https://github.com/AliAlFatly/Schoolproject-AndroidMobileApp-.net" target="_blank">github</a>.</p>
-						</p>
-           			</div>
-           			<div style="width: 500px; float: right;">
-           				<video width="500" height="auto" controls>
-		           			<source src="images/xamarin.mp4" type="video/mp4">
-		           		</video>
-           			</div>
-           		</div>
-            </div>
-            <div id="python">
-            	<ul>
-	                <li><a href="#DL">Deeplearning (Dept project)</a></li>
-	                <li><a href="#ML">Machine learning</a></li>
-	                <li><a href="#pygame">Pygame</a></li>
-	            </ul>
+           		<div id="ML">
+            		<div style="width: 500px; float: left;">
+            			<h2>Machine learning</h2>
+            			<p>
+            				Op mijn tweede jaar ging ik een data mining keuzevak volgen. Ik werd daarbij geintrodoceert tot machine learning, data processing en data analytics.
+            			</p>
+            			<p>
+            				Ik werd in de eerste twee weken geintrodoceert tot data processing en analyics/statistieken met python (pandas, ski-learn, numpy, matlab, etc... ). Ik kreeg vervolgens de opdracht om linear regression toe te passen zoals het omschreven staat in het boek data smart. De boek omschrijft een uitvoering in excel en ik moest het in python uitvoeren. Dit is gelukt.
+            			</p>
+            			<p>
+            				Ik kreeg daarna een opdracht om clustering algoritme (K-means) op te stellen, voor een clustering opdracht (ook van de boek data smart (HF2)). Dit is ook gelukt.
+            			</p>
+            			<p>
+            				Ik werd zo geintroduceert tot tranditionele machine learning, met lineare regressie en K-means als beginers algoritmes.
+            			</p>
+            			
+            		</div>
+            		<div style="width: 500px; float: right;">
+            			<img src="images/km.png" height="600px" width="490px" />
+            			<a href="https://github.com/AliAlFatly/Machinelearning_Python" target="_blank" style="color: blue">github</a>
+            		</div>
+            	</div>
             	<div id="DL">
             		<h2>Proef of concept recommender system (aanbevelingssysteem) - Dept</h2>
             		<div style="width: 500px; float: left;">
@@ -284,36 +345,41 @@
             			<br>
             		</div>
             		<div style="width: 500px; float: right;">
-            			<p><strong>Github</strong> voor dit project is prive, een versie van de algoritme is op de foto te zien voor inzicht.</p>
+            			<p><strong style="color: blue">Github</strong> voor dit project is prive, een versie van de algoritme is op de foto te zien voor inzicht.</p>
             			<p>Ik vond dit project zeer leerzaam, ik kreeg daarbij de mogelijkheid om veel te lezen en om mezelf qua machine learning te ontwikkelen. Ik kreeg zeer veel informatie en kennis van het implementeren van dit project.</p>
             		</div>
             		
             	</div>
-            	<div id="ML">
+
+            	
+            </div>
+            <div id="mobile">
+           		<div id="Xamarin">
+           			<h2>Cross platform sport app in Xamarin<br /></h2>
+           			<div style="width: 500px; float: left;">
+           				<p>
+           					Ik ging bij dit project in een groep een Xamarin app bouwen. Dit app neemt de gebruikers:
+           					<ul>
+           						<li>plan (aankomen of afkomen)</li>
+           						<li>gegevens zoals gewicht en lengte</li>
+           					</ul>
+           					En genereert daaruit een plan voor de gebruiker.
+
+           					Dit was mijn eerste project in .net.
+							<p>Zie <a href="https://github.com/AliAlFatly/Schoolproject-AndroidMobileApp-.net" target="_blank" style="color: blue">github</a>.</p>
+						</p>
+           			</div>
+           			<div style="width: 500px; float: right;">
+           				<video width="500" height="auto" controls>
+		           			<source src="images/xamarin.mp4" type="video/mp4">
+		           		</video>
+           			</div>
+           		</div>
+            </div>
+            <div id="desktop">
+				<div id="pygame">
+					<h2>Paulus' adventures</h2>
             		<div style="width: 500px; float: left;">
-            			<h2>Machine learning</h2>
-            			<p>
-            				Op mijn tweede jaar ging ik een data mining keuzevak volgen. Ik werd daarbij geintrodoceert tot machine learning, data processing en data analytics.
-            			</p>
-            			<p>
-            				Ik werd in de eerste twee weken geintrodoceert tot data processing en analyics/statistieken met python (pandas, ski-learn, numpy, matlab, etc... ). Ik kreeg vervolgens de opdracht om linear regression toe te passen zoals het omschreven staat in het boek data smart. De boek omschrijft een uitvoering in excel en ik moest het in python uitvoeren. Dit is gelukt.
-            			</p>
-            			<p>
-            				Ik kreeg daarna een opdracht om clustering algoritme (K-means) op te stellen, voor een clustering opdracht (ook van de boek data smart (HF2)). Dit is ook gelukt.
-            			</p>
-            			<p>
-            				Ik werd zo geintroduceert tot tranditionele machine learning, met lineare regressie en K-means als beginers algoritmes.
-            			</p>
-            			
-            		</div>
-            		<div style="width: 500px; float: right;">
-            			<img src="images/km.png" height="600px" width="490px" />
-            			<a href="https://github.com/AliAlFatly/Machinelearning_Python" target="_blank">github</a>
-            		</div>
-            	</div>
-            	<div id="pygame">
-            		<div style="min-width: : 500px;">
-            			<h2>Paulus' adventures</h2>
             			<p>
             				Dit is mijn eerste coding project. Bij deze project ging ik in een groep meerdere games ontwikkelen en samenvoegen. De games waren ontwikkeld met behulp van pygame een python games framework.
             			</p>
@@ -329,25 +395,19 @@
             				Ik heb Paulus cave adventure ontwikkeld en mijn groepsgenoten geholpen met fruity adventure and rushing adventure. <br>
             				<br>
             				Zie
-            				<a href="https://github.com/AliAlFatly/Schoolproject-Python-Game" target="_blank">github</a>
+            				<a href="https://github.com/AliAlFatly/Schoolproject-Python-Game" target="_blank" style="color: blue">github</a>
             			</p>
             		</div>
-<!--             		<div style="width: 500px; float: right;">
+           			<div style="width: 500px; float: right;">
            				<video width="500" height="auto" controls>
 		           			<source src="images/APaulusAdventure.mp4" type="video/mp4">
-		           				uw browser steunt dit filmpje niet.
 		           		</video>
-		           		
-		           		
-            		</div> -->
-            	</div>
-            </div>
-            <div id="java">
-            	<div>
-            		Ik volg momenteel een minor full stack webdevelopment waarbij ik onderander java spring boot/spring leer.
+           			</div>
+
             	</div>
             </div>
         </div>
+    </body>
         <script type="text/javascript">
             $("document").ready(function () {
 
@@ -357,25 +417,28 @@
 				    hide: "fadeOut",
 				    active: 0,
 				    collapsible: true,
-				    heightStyle: "auto"
+				    heightStyle: "auto",
+				    overflow: "auto"
 				  });
 
-				  $("#dotnet").tabs({
+				  $("#web").tabs({
 				    event: "click",
 				    show: "fadeIn",
 				    hide: "fadeOut",
 				    active: 0,
 				    collapsible: true,
-				    heightStyle: "auto"
+				    heightStyle: "auto",
+				    overflow: "auto"
 				  });
 
-				  $("#python").tabs({
+				  $("#algorithms").tabs({
 				    event: "click",
 				    show: "fadeIn",
 				    hide: "fadeOut",
 				    active: 0,
 				    collapsible: true,
-				    heightStyle: "auto"
+				    heightStyle: "auto",
+				    overflow: "auto"
 				  });
 
 
